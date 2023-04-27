@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action = '/' method = "post">
+            <label for = "username">Username:</label><br>
+            <input type = "text" id = "username" name = "username"><br>
+            <label for = "password">Password: </label><br>
+            <input type = "text" id = "password" name = "password"><br>
+            <label for = "first_name">FIRST NAME:</label><br>
+            <input type = "text" id = "first_name" name = "first_name"><br>
+            <label for = "last_name">LAST NAME:</label><br>
+            <input type = "text" id = "last_name" name = "last_name"><br>
+            <label for = "school">school:</label><br>
+            <select id = "school" name = "school"><br>
+                {% for schools in data %}
+                    <option>{{schools[0]}}</option>
+                {% endfor %}
+            </select>
+            <br>
+            <label for = "age">age:</label><br>
+            <input type = "text" id = "age" name = "age"><br>
+            <select id = "type" name = "type"><br>
+                <option value = "Student">Student</option>
+                <option value = "Teacher">Teacher</option>
+                <option value = "Admin">Admin</option>
+            </select>
+            <button type = "submit">click</button>
+        </form> 
+    </body>
+</html>

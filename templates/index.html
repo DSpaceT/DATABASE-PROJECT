@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <label>
+        </label>
+    </head>
+    <body>
+        <label>
+            WELCOME PLEASE REGISTER
+        </label>
+        <form action = '/main_page' method = 'post'>
+            <label for = "username">Username:</label>
+            <input type = "text" id = "username" name = "username"><br>
+            <label for = "password">Password:</label>
+            <input type = "text" id = "password" name = "password"><br>
+            <button type = "submit">Submit</button><br>
+        </form>
+        <a href="{{url_for('sign_up')}}">Sign Up</button>
+    </body>
+</html>
